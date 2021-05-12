@@ -1,0 +1,16 @@
+title: Learn git hub skills
+description: Learn git hub skills
+template:
+  repo: learn-git-hub-skills-template
+  name: learn-git-hub-skills
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
